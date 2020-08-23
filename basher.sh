@@ -33,7 +33,7 @@ deb-src http://deb.debian.org/debian/ buster-updates main contrib non-free
 
 EOF
 
-test "$?" && echo "Permission Error!" && exit
+#test "$?" && echo "Permission Error!" && exit
 
 #####
 echo "--> Getting Packages"
