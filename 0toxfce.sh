@@ -40,6 +40,6 @@ echo "--> Getting Packages"
 
 apt -y update
 apt -y upgrade
-apt -y install xfce4 moka-icon-theme arc-theme thunderbird xfce4-terminal firefox-esr network-manager-gnome keepassxc gimp build-essential wget curl findutils synaptic firmware-linux firmware-iwlwifi pulseaudio xfce4-power-manager
+apt -y install xfce4 moka-icon-theme arc-theme lm-sensors mousepad netcat thunderbird xfce4-terminal firefox-esr network-manager-gnome keepassxc gimp build-essential wget curl findutils synaptic firmware-linux firmware-iwlwifi pulseaudio xfce4-power-manager
 
 tasksel install laptop
