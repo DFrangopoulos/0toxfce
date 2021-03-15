@@ -47,15 +47,13 @@ deb-src http://deb.debian.org/debian/ buster-updates main contrib non-free
 
 EOF
 
-test "$?" && echo "Failed to modify sources!" && exit
-
 #####
 echo "--> Getting Packages"
 
 apt -y update
 apt -y upgrade
 apt -y install --no-install-recommends xfce4
-apt -y install xinit xorg xfce4-terminal pavucontrol slock conky moka-icon-theme arc-theme build-essential keepassxc wget curl netstat htop rsync
+apt -y install xinit xorg xfce4-terminal pavucontrol slock conky moka-icon-theme arc-theme build-essential keepassxc wget curl htop rsync
 
 ##Update Skel
 rsync -rv --exclude ".git/" "${DIR}/" /etc/skel/
