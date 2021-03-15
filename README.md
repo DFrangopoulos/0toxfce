@@ -8,7 +8,7 @@ sudo dhclient
 2. Run the script with as root to configure sources, install packages and update skel.
 3. Create a regular user.
 ```bash
-sudo useradd -m <your_user>
-sudo passwd <your_user>
-sudo usermod --shell /bin/bash <your_user>
+sudo useradd -m <your_new_user>
+sudo passwd <your_new_user>
+sudo usermod --shell /bin/bash <your_new_user>
 ``` 
